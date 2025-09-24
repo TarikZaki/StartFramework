@@ -17,7 +17,7 @@ export class Portfolio {
     this.flag = true;
   }
   PortfolioSrc: string[] = [
-    'assets/port1.png',
+    '/StartFramework/assets/port1.png',
     'assets/port2.png',
     'assets/port3.png',
     'assets/port1.png',

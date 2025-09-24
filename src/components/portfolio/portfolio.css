@@ -1,0 +1,9 @@
+figcaption {
+  opacity: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+figure:hover figcaption {
+  opacity: 0.8;
+}

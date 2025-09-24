@@ -1,0 +1,25 @@
+<section>
+  <div class="container pt-4">
+    <div class="text-center">
+      <app-star [titleStar]="title" [customColor]="lineClr"></app-star>
+    </div>
+    <div class="row g-5">
+      @for (src of PortfolioSrc; track $index) {
+      <div class="col-lg-4 col-md-6">
+        <figure (click)="flag = false ; modelImg = src " class="position-relative overflow-hidden">
+          <img [src]="src" class="w-100 rounded-3" alt="port">
+          <figcaption
+            class="position-absolute bg-sec rounded-3 top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus fa-6x text-white "></i>
+          </figcaption>
+        </figure>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div (click)="hideModel($event.target,img)" [class.d-none]="flag"
+  class="model position-fixed start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center bg-primary bg-opacity-25 ">
+  <img #img [src]="modelImg" alt="port" class="rounded-3" width="650">
+</div>

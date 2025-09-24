@@ -1,0 +1,13 @@
+nav {
+  transition: all 0.5s;
+}
+
+.navbar a {
+  font-size: 16px;
+}
+
+.active-link {
+  background-color: var(--sec-clr);
+  font-weight: bold;
+  border-radius: 10px;
+}

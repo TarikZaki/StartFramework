@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-clr: #2c3e50;
+  --sec-clr: #1abc9c;
+}
+
+.bg-main {
+  background-color: var(--main-clr);
+}
+
+.text-main {
+  color: var(--main-clr);
+}
+
+.bg-sec {
+  background-color: var(--sec-clr);
+}
+
+.text-sec {
+  color: var(--sec-clr);
+}
+
+.btn-main {
+  background-color: var(--sec-clr);
+  padding: 10px 25px;
+  color: #fff;
+  outline: unset;
+  border: none;
+  border-radius: 10px;
+}
+
+a,
+a:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.pt-nav {
+  padding-top: 106px;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+@media (maxwidth: 1200px) {
+}
